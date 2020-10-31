@@ -192,6 +192,13 @@
                 ctx.fillText(span.text, currentX, 30);
                 currentX += span.dims.width;
             });
+
+            const image = new Image();
+            image.addEventListener('load', () => {
+                ctx.drawImage(image, 320, 320, 50, 50);
+            })
+            image.src = 'https://pieshop.netlify.com/images/bethanylogo.png';
+
         }
 
 
